@@ -29,6 +29,7 @@ function App() {
   const [fetching, setFetching] = useState(false);
   const [snackbar, setSnackbar] = useState({ open: false, message: '', severity: 'success' });
 
+  // Fetch items on mount
   useEffect(() => {
     fetchItems();
   }, []);
